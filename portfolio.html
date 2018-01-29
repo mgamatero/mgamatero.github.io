@@ -4,87 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic Portfolio - Portfolio</title>
-   
+    <title>portfolio.html</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-   <!-- <link rel="stylesheet" href="assets/css/reset.css">-->
     
 </head>
-<body>
-    
-    <header>
-        <div class="visible_header">
-            <h1>Michael Gamatero</h1>       
-            <nav>
-                <div>
-                    <ul>                        
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ul>                                           
-                </div>
-            </nav>
-        </div>         
-    </header>
-    <!--<div class="sample">Sample 960"</div>-->
-    <main>                           
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-            <hr>
-            <table id="portfolio_table">
-                <tr>
-                    <td>
-                        <div class="portfolio_pictures">
-                            <img src="assets/images/martinguitars.jpg" alt="martinguitars.jpg" width=275px height=175px/>
-                            <div class="image_banner">Acoustic Guitars</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="portfolio_pictures">
-                            <img src="assets/images/disneyland.jpg" alt="disneyland.jpg" width=275px height=175px/>
-                            <div class="image_banner">Disneyland</div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="portfolio_pictures">
-                            <img src="assets/images/movies.jpg" alt="movies.jpg" width=275px height=175px/>
-                            <div class="image_banner">Movies</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="portfolio_pictures">
-                            <img src="assets/images/running.jpg" alt="running.jpg" width=275px height=175px/>
-                            <div class="image_banner">Running</div>
-                            </div>
-                    </td>
-                </tr>
-                <tr>
-                        <td>
-                            <div class="portfolio_pictures">
-                                <img src="assets/images/sushi.jpg" alt="sushi.jpg" width=275px height=175px/>
-                                <div class="image_banner">Sushi</div>
-                            </div>
-                        </td>    
-            </table>                            
-        </div> 
-
-        <aside> 
-            <h3>Connect with Me</h3>
-      
-            <div id="aside_links">
-                <a href="http://www.github.com" target="_blank"><img src="assets/images/GitHub.jpg"></a>
-                <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/linkedin.jpg"></a>
-                <a href="http://www.github.com" target="_blank"><img src="assets/images/StackOverflow.jpg"></a>
+<body>  
+    <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container">      
+            <div class="navbar-header">
+              <a href="index.html"><h1>M.Gamatero</h1></a>
             </div>
-        </aside>
-    </main>
-<footer>
-    @ Copyright 2018 Michael Gamatero
-</footer>
+                <ul class="navbar-nav ml-auto">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+        </div>         
+    </nav> <!--end navbar-->
 
 
-    
+    <main class="container">        
+        <div class="row">
+            <section class="col-md-8 col-sm-12 col-xs-12">
+                <div class="portfolio">
+                    <h3>Portfolio</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <img src="assets/images/martinguitars.jpg" alt="Responsive image" class="img-thumbnail">
+                            <span class="image_banner">Martin Guitars</span>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <img src="assets/images/movies.jpg" alt="Responsive image" class="img-thumbnail">
+                            <span class="image_banner">Movies</span>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                <img src="assets/images/running.jpg" alt="Responsive image" class="img-fluid">
+                                <span class="image_banner">Running</span>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                <img src="assets/images/disneyland.jpg" alt="Responsive image" class="img-fluid">
+                                <span class="image_banner">Disneyland</span>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                <img src="assets/images/sushi.jpg" alt="Responsive image" class="img-fluid">
+                                <span class="image_banner">Sushi</span>
+                        </div>
+                    </div>
+                </div> <!-- Close Portfolio-->
+            </section> 
+         
+            
+            
+                        
+            <section class="col-md-4">
+                <div class="aside">
+                    <h3>Connect with Me</h3>
+                    <hr>
+                    <a href="http://www.github.com" target="_blank"><img src="assets/images/github.jpg"></a>
+                    <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/linkedin.jpg"></a>
+                    <a href="http://www.stackoverflow.com" target="_blank"><img src="assets/images/stackoverflow.jpg"></a>
+                </div> <!-- Close aside-->
+            </section>
+        </div>  <!-- End About Me and Aside Row  -->
+        
+
+    </main>  <!-- End Main  -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+                <div class="container-fluid">
+                        <div class="container text-center">
+                            <span>@ Copyright Michael Gamatero 2018</span>
+                        </div>
+                </div> 
+    </footer>
+ <!-- Footer End -->
+
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </body>
 </html>

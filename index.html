@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic Portfolio - About</title>
-   
-        <link rel="stylesheet" href="assets/css/style.css">
+    <title>index.html</title>
 
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
-    
-    <header>
-        <div class="visible_header">
-            <h1>Michael Gamatero</h1>       
-            <nav>
-                <div>
-                    <ul>                       
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ul>                                           
-                </div>
-            </nav>
-        </div>         
-    </header>
-    <!--<div class="sample">Sample 960"</div>-->
-    <main>                           
-        <div class="about_me">
-            <h1>About Me</h1>
-            <hr>
-                <p><img src="assets/images/Family.jpg" alt="Family.jpg"/>Hello, my name is Mike G.  I like my family.  My kid is 2, but acts like she's 3.  My wife makes me smile.  I like my music, I like my bike.  I like my life.  
-                    On this site is a collection of the things I like.  Ranging from movies, guitars, places, sports, etc.  Please take a look and let me know what you think.</p>
-                <p> This is Lorem ipsum text.  Good to fill in if you got nothing to say. <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores commodi corrupti ex odit quidem et eligendi molestias porro ullam, pariatur facere aperiam minima voluptas ad, quo quos eos quibusdam obcaecati.
-                    Quaerat aliquam quidem sit ducimus nostrum vitae"</blockquote></p>
-        </div>   
-
-        <aside> 
-            <h3>Connect with Me</h3>
-      
-            <div id="aside_links">
-                <a href="http://www.github.com" target="_blank"><img src="assets/images/GitHub.jpg"></a>
-                <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/linkedin.jpg"></a>
-                <a href="http://www.github.com" target="_blank"><img src="assets/images/StackOverflow.jpg"></a>
+    <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html">
+                    <h1>M.Gamatero</h1>
+                </a>
             </div>
-        </aside>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end navbar-->
+
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <section class="col-md-8 col-sm-12 col-xs-12">
+                <div class="about_me">
+                    <h3>About Me</h3>
+                    <hr>
+                    <img src="assets/images/family.jpg" alt="family.jpg">
+                    <p>Hello, my name is Mike G. I like my family. My kid is 2, but acts like she's 3. My wife makes me smile.
+                        I like my music, I like my bike. I like my life. On this site is a collection of the things I like.
+                        Ranging from movies, guitars, places, sports, etc. Please take a look and let me know what you think.</p>
+                    <br>
+                    <p>This is Lorem ipsum text. Good to fill in if you got nothing to say.
+                        <blockquotes>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores commodi corrupti ex odit quidem
+                            et eligendi molestias porro ullam, pariatur facere aperiam minima voluptas ad, quo quos eos quibusdam
+                            obcaecati. Quaerat aliquam quidem sit ducimus nostrum vitae"</blockquotes>
+                    </p>
+                    <br>
+                    <p>This is Bacon ipsum text. Good to fill in if you got nothing to say.
+                        <blockquotes>"Bacon ipsum dolor amet venison brisket capicola sausage strip steak. Turducken andouille meatball
+                            hamburger, picanha ground round prosciutto chuck meatloaf cupim doner jerky. Hamburger sausage
+                            t-bone frankfurter salami. Doner burgdoggen spare ribs, biltong ham meatloaf leberkas jerky bacon
+                            ribeye."</blockquotes>
+                    </p>
+                    <br>
+                </div>
+                <!-- Close about_me-->
+            </section>
+
+
+            <section class="col-md-4 col-sm-12 col-xs-12">
+                <div class="aside">
+                    <h3>Connect with Me</h3>
+                    <hr>
+                    <a href="http://www.github.com" target="_blank">
+                        <img src="assets/images/github.jpg">
+                    </a>
+                    <a href="http://www.linkedin.com" target="_blank">
+                        <img src="assets/images/linkedin.jpg">
+                    </a>
+                    <a href="http://www.stackoverflow.com" target="_blank">
+                        <img src="assets/images/stackoverflow.jpg">
+                    </a>
+                </div>
+                <!-- Close aside-->
+            </section>
+        </div>
+        <!-- End About Me and Aside Row  -->
+
+
     </main>
-<footer>
-    
-    @ Copyright 2018 Michael Gamatero
-    
-</footer>
+    <!-- End Main  -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container text-center">
+                <span>@ Copyright Michael Gamatero 2018</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
 
-    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
